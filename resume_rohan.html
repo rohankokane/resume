@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rohan Kokane</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            font-family: "Inter", sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            opacity: 0.7;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1;
+            height: 100%;
+        }
+
+        aside {
+            background-color: #1c2833;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            color: rgb(249, 253, 255);
+
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            /* height: 100%; */
+            padding: 1rem 3rem;
+            overflow-y: scroll;
+        }
+
+        aside .profile-pic {
+            width: 50%;
+            border-radius: 50%;
+            text-align: center;
+        }
+
+        aside .intro-main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        aside .intro {
+            text-align: center;
+        }
+
+        aside .intro>h1 {
+            font-size: 2rem;
+        }
+
+        hr.dash {
+            border: 2px solid #f13c54;
+            margin: 10px auto;
+            width: 40px;
+        }
+
+        .details {
+            padding: 0 20% 0 0;
+        }
+
+
+        section>div {
+            width: 100%;
+            padding-bottom: 1rem;
+        }
+
+        section hr.left {
+            border-color: rgb(0, 206, 154);
+            margin: 10px auto 10px 0;
+        }
+
+        .experience {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .company {
+            padding: 0 0 1.2rem;
+        }
+
+        .company:last-child {
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul>li>ul {
+            margin-left: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <aside>
+            <div class="intro-main">
+                <img src="./profile_pic.jpg" class="profile-pic" alt="" srcset="" />
+                <div class="intro">
+                    <h1>Rohan Kokane</h1>
+                    <hr class="dash">
+                    </hr>
+                    <h2>Frontend UI developer</h2>
+                </div>
+            </div>
+
+            <div class="details">
+                <div class="mail">
+                    <h3>Email:</h3>
+                    <a href="mailto:rohankokane19@gmail.com">rohankokane19@gmail.com</a>
+                </div>
+                <div class="linked-in">
+                    <h3>LinkedIn:</h3>
+                    <a href="https://www.linkedin.com/in/rohankokane/">linkedin.com/in/rohankokane</a>
+                </div>
+                <div class="github">
+                    <h3>Github:</h3>
+                    <a href="https://github.com/rohankokane">github.com/rohankokane</a>
+                </div>
+            </div>
+        </aside>
+        <section>
+            <div class="about-me">
+                <h2>About me</h2>
+                <hr class="dash left">
+                I'm a 20 year old Front End Developer based in India ☀️. I describe myself as a developer who loves
+                coding, open source, and the web platform ❤️. <br> I am passionate about user experience and have an eye
+                for improving the UI ⚙️.
+            </div>
+            <div class="experience">
+                <h2>Experience</h2>
+                <hr class="dash left">
+                <div class="company">
+                    <h3>Full Stack Developer</h3>
+                    <h4>LemonYellow LLP</h4>
+                    <p>
+                        Worked at a UI/UX design firm as a full stack developer for 3 months full time.
+                        Developed Web solutions like corporate websites, SaaS apps used for data visualization, online portals for design courses using tech stack of HTML5, CSS3, JS, PHP, MySQL and	 frameworks like 
+                        Bootstrap, Chart.js, Animate.js etc.
+                    </p>
+                </div>
+                <div class="company">
+                    <h3>Web Developer</h3>
+                    <h4>MYRAIT, SDG-RAIT</h4>
+                    <p>
+                        Winter Internship at SDG-RAIT as a web developer for MYRAIT an  project. Centralized the database, Rebuilt the User Interface, Added features to display attendance of the students.
+                        Tech Stack: HTML5, CSS3, JS, PHP, MySQL
+                    </p>
+                </div>
+            </div>
+            <div class="projects">
+                <h2>Projects</h2>
+                <hr class="dash left">
+                <div class="company">
+                    <span>
+                        <h3>Open Source Contributor</h3>
+                        <h4>Svelte JS</h4>
+                        <p>
+                            One of the contributor of a new revolutionizing Client-side Javascript framework Svelte JS.
+                        </p>
+                    </span>
+                </div>
+                <div class="company">
+                    <h3>Maths On The Go <span>[Ongoing]</span></h3>
+                    <h4></h4>
+                    <p>
+                        A web portal for all the needs of student regarding the Mathematics subject from boards to egineering for Free.
+                        Tech stack: Vue JS
+                    </p>
+                </div>
+                <div class="company">
+                    <h3>Covid-19 Portal</h3>
+                    <h4> RAIT </h4>
+                    <p>
+                        A portal developed for the college <strong> <a href="https://www.rait.ac.in/covid19portal/">rait.ac.in/covid19portal</a></strong> considering the current situation of the pandemic.
+                    </p>
+                </div>
+            </div>
+            <div class="skills">
+                <h2>Skills</h2>
+                <hr class="dash left">
+                <ul>
+                    <li>
+                        <h4>Technologies:</h4>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>PHP</li>
+                            <li>MySQL</li>
+                            <li>C++</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Frameworks:</h4>
+                        <ul>
+                            <li>React Js</li>
+                            <li>Vue Js</li>
+                            <li>Svelte Js</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="extra">
+                <h2>Extra Curriculars</h2>
+                <hr class="dash left">
+                <div class="company">
+                    <span>
+                        <h3>Vice-President</h3>
+                        <h4>SocialWing RAIT</h4>
+                    </span>
+                </div>
+                <div class="company">
+                    <h3>NSS leader</h3>
+                    <h4>NSS RAIT</h4>
+                </div>
+                <div class="company">
+                    <h3>Public Relation Officer</h3>
+                    <h4>SocialWing RAIT</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
