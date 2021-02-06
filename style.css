@@ -55,6 +55,7 @@ aside .profile-pic {
     width: 50%;
     border-radius: 50%;
     text-align: center;
+    margin: 1rem 0;
 }
 
 aside .intro-main {
@@ -79,7 +80,7 @@ hr.dash {
 }
 
 .details {
-    padding: 0 20% 0 0;
+    width:300px
 }
 
 
